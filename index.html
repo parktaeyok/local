@@ -12,20 +12,24 @@
 <body>
   <header><a class="brand" href="./"><span class="logo" aria-hidden="true">한입</span>한입지도</a><span class="header-note">오늘의 맛집을 발견하는 시간</span><a href="https://map.kakao.com/" target="_blank" rel="noopener noreferrer">카카오맵 ↗</a></header>
   <main>
-    <aside>
+    <section class="search-stage" aria-label="맛집 검색">
       <div class="intro"><span class="eyebrow">YOUR NEXT GOOD BITE</span><h1>오늘은 어디서<br>먹을까<span>?</span></h1><p>가고 싶은 동네, 먹고 싶은 메뉴를 검색해요.</p></div>
       <form id="search-form"><label for="query">동네 또는 음식점 검색</label><div class="search-box"><input id="query" name="query" placeholder="예: 성수동 파스타" maxlength="100" required><button type="submit" aria-label="맛집 검색">검색</button></div></form>
       <div class="suggestions" aria-label="추천 검색어"><button type="button" data-query="성수동 맛집">성수동 맛집</button><button type="button" data-query="연남동 파스타">연남동 파스타</button><button type="button" data-query="강남역 한식">강남역 한식</button></div>
-      <div class="results-heading"><h2>검색 결과</h2><span id="count"></span></div>
-      <p id="status" role="status" aria-live="polite">검색어를 입력하고 오늘의 한 끼를 찾아보세요.</p>
-      <ol id="results"></ol><nav id="pagination" aria-label="검색 결과 페이지"></nav>
-      <div class="aside-footer">장소 정보 제공 · Kakao Map</div>
-    </aside>
-    <section class="map-panel" aria-label="맛집 지도">
-      <div id="map"></div>
-      <div id="map-message" class="map-message"><div class="plate" aria-hidden="true">🍽️</div><span class="eyebrow">A LITTLE SEARCH, A GOOD MEAL</span><h2>맛있는 발견의 시작</h2><p id="map-description">검색한 맛집의 위치를<br>지도에서 한눈에 확인하세요.</p><a id="external-search" class="primary-link" href="https://map.kakao.com/" target="_blank" rel="noopener noreferrer">카카오맵 열기 ↗</a><p class="connection-note" id="connection-note"></p></div>
-      <div class="map-label">한입지도 <span>동네에서 찾는 맛있는 순간</span></div>
     </section>
+    <div class="explorer">
+      <aside class="results-panel">
+        <div class="results-heading"><h2>검색 결과</h2><span id="count"></span></div>
+        <p id="status" role="status" aria-live="polite">검색어를 입력하고 오늘의 한 끼를 찾아보세요.</p>
+        <ol id="results"></ol><nav id="pagination" aria-label="검색 결과 페이지"></nav>
+        <div class="aside-footer">장소 정보 제공 · Kakao Map</div>
+      </aside>
+      <section class="map-panel" aria-label="맛집 지도">
+        <div id="map"></div>
+        <div id="map-message" class="map-message"><div class="plate" aria-hidden="true">🍽️</div><span class="eyebrow">A LITTLE SEARCH, A GOOD MEAL</span><h2>맛있는 발견의 시작</h2><p id="map-description">검색한 맛집의 위치를<br>지도에서 한눈에 확인하세요.</p><a id="external-search" class="primary-link" href="https://map.kakao.com/" target="_blank" rel="noopener noreferrer">카카오맵 열기 ↗</a><p class="connection-note" id="connection-note"></p></div>
+        <div class="map-label">한입지도 <span>동네에서 찾는 맛있는 순간</span></div>
+      </section>
+    </div>
   </main>
 </body>
 </html>
